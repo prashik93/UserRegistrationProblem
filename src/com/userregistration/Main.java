@@ -12,6 +12,6 @@ public class Main {
         System.out.println("\nValidating FirstName and LastName " + Pattern.matches("^[A-Z]{1}[a-z]{2,}[\s][A-Z]{1}[a-z]{2,}$", "Prashik Kamble"));
         System.out.println("\nValidating Email " + Pattern.matches("^((([a-z]{3})|([a-z]{3}[.][a-z]{3}))[@][bl]{2}[.][co]{2})$|^((([a-z]{3})|([a-z]{3}[.][a-z]{3}))[@][bl]{2}[.][co]{2}[.][in]{2})$", "abc.xyz@bl.co.in"));
         System.out.println("\nValidating Mobile Format " + Pattern.matches("^[0-9]{2}[\\s][0-9]{10}$", "91 9919819801"));
-        System.out.println("\nPassword should have minimum 8 characters and at least 1 Upper case letter " + Pattern.matches("^(?=.*[A-Z])([a-zA-Z]){8,}$", "abcAeBgh"));
+        System.out.println("\nPassword should have minimum 8 characters and at least 1 UpperCase letter and 1 Numeric Number " + Pattern.matches("^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]){8,}$", "abcAeBgh"));
     }
 }
