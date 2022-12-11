@@ -9,6 +9,6 @@ public class Main {
     }
 
     public void validatingUserRegistration() {
-        System.out.println("\nValidating FirstName " + Pattern.matches("^[A-Z]{1}[a-z]{2,}$", "Prashik"));
+        System.out.println("\nValidating FirstName and LastName " + Pattern.matches("^[A-Z]{1}[a-z]{2,}[\s][A-Z]{1}[a-z]{2,}$", "Prashik Kamble"));
     }
 }
